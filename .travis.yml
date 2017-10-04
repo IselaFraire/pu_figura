@@ -12,6 +12,7 @@ before_script:
 
 script:
     - python TestAreaFiguras.py
-    - coverage run TestAreaFiguras.py
+    - coverage run --branch TestAreaFiguras.py
+    - coverage report
     - cd figura/tests 
     - lettuce
